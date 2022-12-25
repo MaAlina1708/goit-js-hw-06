@@ -8,10 +8,9 @@ function getRandomHexColor() {
 
 const colorName = document.querySelector(".color");
 const button = document.querySelector(".change-color");
-const widgetColor = document.querySelector(".widget");
 
 button.addEventListener("click", (event) => {
   const randomColor = getRandomHexColor();
   colorName.textContent = randomColor;
-  widgetColor.style.backgroundColor = randomColor;
+  document.body.style.backgroundColor = randomColor;
 });
